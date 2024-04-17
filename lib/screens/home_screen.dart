@@ -456,7 +456,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   MaterialPageRoute(
                     builder: (context) {
                       double BMI = weight / pow(height / 100, 2);
-                      if (weight < 0 || height < 0) {
+                      if (weight < 0 || height < 0 || age < 0) {
                         BMI = 0;
                       }
                       return ResultScreen(
